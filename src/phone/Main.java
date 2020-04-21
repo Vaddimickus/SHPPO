@@ -10,7 +10,7 @@ public class Main {
                 "\t3.Сбросить\n" +
                 "\t4.Пополнить баланс" +
                 "\tВведите номер команды");
-        Phone phone = new Phone(880055522, 100, 0.9);
+        Phone phone = new Phone(880055522, 100, 0.1);
         Scanner scanner = new Scanner(System.in);
         while(true){
             switch (scanner.nextLine()){
