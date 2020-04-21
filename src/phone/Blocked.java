@@ -12,7 +12,7 @@ public class Blocked extends PhoneState {
 
     @Override
     public void toCall(int number) {
-
+        System.out.println("Невозможно вызвать данную команду сейчас");
     }
 
     @Override
@@ -23,7 +23,7 @@ public class Blocked extends PhoneState {
 
     @Override
     public void endAConversation() {
-
+        System.out.println("Невозможно вызвать данную команду сейчас");
     }
 
     @Override

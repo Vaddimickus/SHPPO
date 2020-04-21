@@ -32,7 +32,7 @@ public class Call extends PhoneState {
 
     @Override
     public void toCall(int number) {
-
+        System.out.println("Невозможно вызвать данную команду сейчас");
     }
 
     @Override
@@ -46,9 +46,9 @@ public class Call extends PhoneState {
             System.out.println("Call to Wait, endAConversation");
             phone.changeState(new Wait(phone));
         } else {
-            System.out.println("Call to Blocked, endAConversation");
+           System.out.println("Call to Blocked, endAConversation");
             phone.changeState(new Blocked(phone));
-        }
+       }
     }
 
     @Override
