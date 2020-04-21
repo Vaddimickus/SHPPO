@@ -37,6 +37,7 @@ public class Wait extends PhoneState {
 
     @Override
     public void endAConversation() {
+        System.out.println("Невозможно вызвать данную команду сейчас");
     }
 
     @Override

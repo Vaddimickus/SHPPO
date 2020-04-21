@@ -4,15 +4,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        Phone phone = new Phone(880055522, 100, 0.1);
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Доступные комманды:\n" +
-                "\tПозвонить\n" +
-                "\tПоднять трубку\n" +
-                "\tСбросить\n" +
-                "\tПополнить баланс");
+                "\t1.Позвонить\n" +
+                "\t2.Поднять трубку\n" +
+                "\t3.Сбросить\n" +
+                "\t4.Пополнить баланс" +
+                "\tВведите номер команды");
+        Phone phone = new Phone(880055522, 100, 0.9);
+        Scanner scanner = new Scanner(System.in);
         while(true){
-            switch (scanner.next()){
+            switch (scanner.nextLine()){
                 case "Позвонить" : {
                     System.out.println("Введите номер (начиная с 8, максимум 9 цифр)");
                     while(true) {
@@ -24,13 +25,17 @@ public class Main {
                         }
                     }
                     break;
-                } case "Поднять трубку": {
+                }
+                case "Поднять трубку": {
+                    System.out.println("Поднял");
                     phone.pickUpThePhone();
                     break;
-                } case "Сбросить" : {
+                }
+                case "Сбросить" : {
                     phone.endConversation();
                     break;
-                } case "Пополнить баланс" : {
+                }
+                case "Пополнить баланс" : {
                     System.out.println("Введите сумму (в копейках)");
                     while(true) {
                         try {

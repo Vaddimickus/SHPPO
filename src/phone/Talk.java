@@ -32,10 +32,12 @@ public class Talk extends PhoneState implements Runnable {
 
     @Override
     public void toCall(int number) {
+        System.out.println("Невозможно вызвать данную команду сейчас");
     }
 
     @Override
     public void pickUp() {
+        System.out.println("Невозможно вызвать данную команду сейчас");
     }
 
     @Override
