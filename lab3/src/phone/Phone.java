@@ -7,7 +7,7 @@ public class Phone {
 	public volatile int balance;
 	public volatile double probability;
 	
-	private PhoneState state;
+	private volatile PhoneState state;
 	
 	public void changeState(PhoneState state) {
 		this.state = state;
